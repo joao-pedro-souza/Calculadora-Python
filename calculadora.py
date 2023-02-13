@@ -22,6 +22,15 @@ while True:
         print('Operador inválido')
         continue
 
+    if operacao == '+':
+        print(f'{numero1} + {numero2} = {float_numero1 + float_numero2}')
+    elif operacao == '-':
+        print(f'{numero1} - {numero2} = {float_numero1 - float_numero2}')
+    elif operacao == '/':
+        print(f'{numero1} / {numero2} = {float_numero1 / float_numero2}')
+    elif operacao == '*':
+        print(f'{numero1} * {numero2} = {float_numero1 * float_numero2}')
+        
     sair = input('Deseja sair? [S]/[N]: ').lower().startswith('s')
 
     if sair:
