@@ -2,6 +2,7 @@ while True:
 
     numero1 = input('Digite um número: ')
     numero2 = input('Digite outro número: ')
+    operacao = input('Digite o operador (+-/*): ')
 
     numeros_validos = None
 
@@ -13,6 +14,13 @@ while True:
         print('Pelo menos um dos números digitados é inválido.')
         continue
 
+    if len(operacao) > 1:
+        print('Digite apenas um operador.')
+        continue
+
+    if operacao not in '+-/*':
+        print('Operador inválido')
+        continue
 
     sair = input('Deseja sair? [S]/[N]: ').lower().startswith('s')
 
